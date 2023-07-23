@@ -1,0 +1,62 @@
+{% extends 'base.html' %} {% block head %}
+<title>About</title>
+<style>
+  /* Add custom CSS styles for the about page */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .app-logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+</style>
+{% endblock %} {% block body %}
+<div class="container">
+  <img
+    src="/static/images/todo-app-logo.png"
+    alt="Todo App Logo"
+    class="app-logo"
+  />
+  <h2>About Todo App</h2>
+  <p>
+    The Todo App is a simple and intuitive task management application built
+    using Flask and SQLAlchemy.
+  </p>
+  <p>
+    With the Todo App, you can organize your tasks effectively and never miss an
+    important deadline again. Add new tasks, update their titles or
+    descriptions, mark them as completed, and delete them when you're done.
+  </p>
+  <p>Features:</p>
+  <ul>
+    <li>Easy-to-use interface for adding and managing tasks</li>
+    <li>Automatically timestamps tasks with their creation date</li>
+    <li>Responsive design for use on desktop and mobile devices</li>
+    <li>Securely stores your tasks in a SQLite database</li>
+  </ul>
+  <p>
+    Whether you're managing personal to-dos or team projects, the Todo App is
+    here to simplify your task management process.
+  </p>
+  <p>
+    Thank you for using our Todo App. We hope it helps you stay organized and
+    boost your productivity.
+  </p>
+</div>
+{% endblock %}
